@@ -3,7 +3,7 @@
 require_once 'config/db.php';
 require_once 'config/functions.php';
 
-$view = displayHighestOrder();
+$view = displayWarehouseInventory();
 
 ?>
 <!DOCTYPE html>
@@ -13,7 +13,7 @@ $view = displayHighestOrder();
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <title>Highest Order View</title>
+  <title>Warehouse Inventory View</title>
 </head>
 <body class="bg-dark">
     <div class="container">
@@ -21,14 +21,15 @@ $view = displayHighestOrder();
         <div class="col">
           <div class="card mt-5">
             <div class="card-header">
-              <h2 class="display-6 text-center">Highest Order View</h2>
+              <h2 class="display-6 text-center">Warehouse Inventory View</h2>
             </div>
             <div class="card-body">
               <table class="table table-bordered text-center">
                 <tr class="bg-dark text-white">
-                  <td> Customer ID </td>
-                  <td> Customer Name </td>
-                  <td> Highest Order Amount </td>
+                  <td> Product ID </td>
+                  <td> Product Name </td>
+                  <td> Quantity </td>
+                  <td> Warehouse Address </td>
                 </tr>
                 <tr>
                 <?php 
@@ -36,10 +37,10 @@ $view = displayHighestOrder();
                   while($row = mysqli_fetch_assoc($view))
                   {
                 ?>
-                  <td><?php echo $row['CustomerID']; ?></td>
-                  <td><?php echo $row['CustomerName']; ?></td>
-                  <td><?php echo '$'.$row['HighestOrderAmount']; ?></td>
-
+                  <td><?php echo $row['product_ID']; ?></td>
+                  <td><?php echo $row['prod_name']; ?></td>
+                  <td><?php echo $row['quantity']; ?></td>
+                  <td><?php echo $row['war_address']; ?></td>
                 </tr>
                 <?php    
                   }

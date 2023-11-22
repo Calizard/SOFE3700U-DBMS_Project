@@ -3,7 +3,7 @@
 require_once 'config/db.php';
 require_once 'config/functions.php';
 
-$view = displayHighestOrder();
+$view = displayDep1and2Employees();
 
 ?>
 <!DOCTYPE html>
@@ -13,7 +13,7 @@ $view = displayHighestOrder();
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <title>Highest Order View</title>
+  <title>Department 1 and 2 Employees View</title>
 </head>
 <body class="bg-dark">
     <div class="container">
@@ -21,14 +21,14 @@ $view = displayHighestOrder();
         <div class="col">
           <div class="card mt-5">
             <div class="card-header">
-              <h2 class="display-6 text-center">Highest Order View</h2>
+              <h2 class="display-6 text-center">Department 1 and 2 Employees View</h2>
             </div>
             <div class="card-body">
               <table class="table table-bordered text-center">
                 <tr class="bg-dark text-white">
-                  <td> Customer ID </td>
-                  <td> Customer Name </td>
-                  <td> Highest Order Amount </td>
+                  <td> Employee ID </td>
+                  <td> Employee First Name </td>
+                  <td> Employee Last Name </td>
                 </tr>
                 <tr>
                 <?php 
@@ -36,10 +36,9 @@ $view = displayHighestOrder();
                   while($row = mysqli_fetch_assoc($view))
                   {
                 ?>
-                  <td><?php echo $row['CustomerID']; ?></td>
-                  <td><?php echo $row['CustomerName']; ?></td>
-                  <td><?php echo '$'.$row['HighestOrderAmount']; ?></td>
-
+                  <td><?php echo $row['E_ID']; ?></td>
+                  <td><?php echo $row['Emp_Fname']; ?></td>
+                  <td><?php echo $row['Emp_Lname']; ?></td>
                 </tr>
                 <?php    
                   }
