@@ -71,4 +71,5 @@
     $view = mysqli_query($con,$query);
     return $view;
   }
+
 ?>
