@@ -20,5 +20,5 @@ ie. using PhpMyAdmin
 
 To visit the home page of the project go to  
 ```
-localhost/dbproject/home.php
+localhost/dbproject/webpages/home.php
 ```
