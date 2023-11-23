@@ -59,6 +59,7 @@ function fetchData($tableName, $conn) {
                     'getJSON',
                     'tables',
                     'addProduct',
+                    'APIcall',
                 );
                 foreach ($viewNames as $viewName) {
                     $file = $viewName . '.php';

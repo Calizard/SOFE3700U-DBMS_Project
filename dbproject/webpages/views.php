@@ -42,6 +42,7 @@
                     'getJSON',
                     'tables',
                     'addProduct',
+                    'APIcall',
                 );
                 foreach ($viewNames as $viewName) {
                     $file = $viewName . '.php';
