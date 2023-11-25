@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Nov 22, 2023 at 03:34 PM
+-- Generation Time: Nov 24, 2023 at 03:27 PM
 -- Server version: 8.0.35
 -- PHP Version: 8.0.13
 
@@ -20,6 +20,286 @@ SET time_zone = "+00:00";
 --
 -- Database: `dbproject`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `api_data`
+--
+
+DROP TABLE IF EXISTS `api_data`;
+CREATE TABLE IF NOT EXISTS `api_data` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(30) COLLATE utf8mb4_general_ci NOT NULL,
+  `email` varchar(30) COLLATE utf8mb4_general_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=261 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `api_data`
+--
+
+INSERT INTO `api_data` (`id`, `name`, `email`) VALUES
+(1, 'Leanne Graham', 'Sincere@april.biz'),
+(2, 'Ervin Howell', 'Shanna@melissa.tv'),
+(3, 'Clementine Bauch', 'Nathan@yesenia.net'),
+(4, 'Patricia Lebsack', 'Julianne.OConner@kory.org'),
+(5, 'Chelsey Dietrich', 'Lucio_Hettinger@annie.ca'),
+(6, 'Mrs. Dennis Schulist', 'Karley_Dach@jasper.info'),
+(7, 'Kurtis Weissnat', 'Telly.Hoeger@billy.biz'),
+(8, 'Nicholas Runolfsdottir V', 'Sherwood@rosamond.me'),
+(9, 'Glenna Reichert', 'Chaim_McDermott@dana.io'),
+(10, 'Clementina DuBuque', 'Rey.Padberg@karina.biz'),
+(11, 'Leanne Graham', 'Sincere@april.biz'),
+(12, 'Ervin Howell', 'Shanna@melissa.tv'),
+(13, 'Clementine Bauch', 'Nathan@yesenia.net'),
+(14, 'Patricia Lebsack', 'Julianne.OConner@kory.org'),
+(15, 'Chelsey Dietrich', 'Lucio_Hettinger@annie.ca'),
+(16, 'Mrs. Dennis Schulist', 'Karley_Dach@jasper.info'),
+(17, 'Kurtis Weissnat', 'Telly.Hoeger@billy.biz'),
+(18, 'Nicholas Runolfsdottir V', 'Sherwood@rosamond.me'),
+(19, 'Glenna Reichert', 'Chaim_McDermott@dana.io'),
+(20, 'Clementina DuBuque', 'Rey.Padberg@karina.biz'),
+(21, 'Leanne Graham', 'Sincere@april.biz'),
+(22, 'Ervin Howell', 'Shanna@melissa.tv'),
+(23, 'Clementine Bauch', 'Nathan@yesenia.net'),
+(24, 'Patricia Lebsack', 'Julianne.OConner@kory.org'),
+(25, 'Chelsey Dietrich', 'Lucio_Hettinger@annie.ca'),
+(26, 'Mrs. Dennis Schulist', 'Karley_Dach@jasper.info'),
+(27, 'Kurtis Weissnat', 'Telly.Hoeger@billy.biz'),
+(28, 'Nicholas Runolfsdottir V', 'Sherwood@rosamond.me'),
+(29, 'Glenna Reichert', 'Chaim_McDermott@dana.io'),
+(30, 'Clementina DuBuque', 'Rey.Padberg@karina.biz'),
+(31, 'Leanne Graham', 'Sincere@april.biz'),
+(32, 'Ervin Howell', 'Shanna@melissa.tv'),
+(33, 'Clementine Bauch', 'Nathan@yesenia.net'),
+(34, 'Patricia Lebsack', 'Julianne.OConner@kory.org'),
+(35, 'Chelsey Dietrich', 'Lucio_Hettinger@annie.ca'),
+(36, 'Mrs. Dennis Schulist', 'Karley_Dach@jasper.info'),
+(37, 'Kurtis Weissnat', 'Telly.Hoeger@billy.biz'),
+(38, 'Nicholas Runolfsdottir V', 'Sherwood@rosamond.me'),
+(39, 'Glenna Reichert', 'Chaim_McDermott@dana.io'),
+(40, 'Clementina DuBuque', 'Rey.Padberg@karina.biz'),
+(41, 'Leanne Graham', 'Sincere@april.biz'),
+(42, 'Ervin Howell', 'Shanna@melissa.tv'),
+(43, 'Clementine Bauch', 'Nathan@yesenia.net'),
+(44, 'Patricia Lebsack', 'Julianne.OConner@kory.org'),
+(45, 'Chelsey Dietrich', 'Lucio_Hettinger@annie.ca'),
+(46, 'Mrs. Dennis Schulist', 'Karley_Dach@jasper.info'),
+(47, 'Kurtis Weissnat', 'Telly.Hoeger@billy.biz'),
+(48, 'Nicholas Runolfsdottir V', 'Sherwood@rosamond.me'),
+(49, 'Glenna Reichert', 'Chaim_McDermott@dana.io'),
+(50, 'Clementina DuBuque', 'Rey.Padberg@karina.biz'),
+(51, 'Leanne Graham', 'Sincere@april.biz'),
+(52, 'Ervin Howell', 'Shanna@melissa.tv'),
+(53, 'Clementine Bauch', 'Nathan@yesenia.net'),
+(54, 'Patricia Lebsack', 'Julianne.OConner@kory.org'),
+(55, 'Chelsey Dietrich', 'Lucio_Hettinger@annie.ca'),
+(56, 'Mrs. Dennis Schulist', 'Karley_Dach@jasper.info'),
+(57, 'Kurtis Weissnat', 'Telly.Hoeger@billy.biz'),
+(58, 'Nicholas Runolfsdottir V', 'Sherwood@rosamond.me'),
+(59, 'Glenna Reichert', 'Chaim_McDermott@dana.io'),
+(60, 'Clementina DuBuque', 'Rey.Padberg@karina.biz'),
+(61, 'Leanne Graham', 'Sincere@april.biz'),
+(62, 'Ervin Howell', 'Shanna@melissa.tv'),
+(63, 'Clementine Bauch', 'Nathan@yesenia.net'),
+(64, 'Patricia Lebsack', 'Julianne.OConner@kory.org'),
+(65, 'Chelsey Dietrich', 'Lucio_Hettinger@annie.ca'),
+(66, 'Mrs. Dennis Schulist', 'Karley_Dach@jasper.info'),
+(67, 'Kurtis Weissnat', 'Telly.Hoeger@billy.biz'),
+(68, 'Nicholas Runolfsdottir V', 'Sherwood@rosamond.me'),
+(69, 'Glenna Reichert', 'Chaim_McDermott@dana.io'),
+(70, 'Clementina DuBuque', 'Rey.Padberg@karina.biz'),
+(71, 'Leanne Graham', 'Sincere@april.biz'),
+(72, 'Ervin Howell', 'Shanna@melissa.tv'),
+(73, 'Clementine Bauch', 'Nathan@yesenia.net'),
+(74, 'Patricia Lebsack', 'Julianne.OConner@kory.org'),
+(75, 'Chelsey Dietrich', 'Lucio_Hettinger@annie.ca'),
+(76, 'Mrs. Dennis Schulist', 'Karley_Dach@jasper.info'),
+(77, 'Kurtis Weissnat', 'Telly.Hoeger@billy.biz'),
+(78, 'Nicholas Runolfsdottir V', 'Sherwood@rosamond.me'),
+(79, 'Glenna Reichert', 'Chaim_McDermott@dana.io'),
+(80, 'Clementina DuBuque', 'Rey.Padberg@karina.biz'),
+(81, 'Leanne Graham', 'Sincere@april.biz'),
+(82, 'Ervin Howell', 'Shanna@melissa.tv'),
+(83, 'Clementine Bauch', 'Nathan@yesenia.net'),
+(84, 'Patricia Lebsack', 'Julianne.OConner@kory.org'),
+(85, 'Chelsey Dietrich', 'Lucio_Hettinger@annie.ca'),
+(86, 'Mrs. Dennis Schulist', 'Karley_Dach@jasper.info'),
+(87, 'Kurtis Weissnat', 'Telly.Hoeger@billy.biz'),
+(88, 'Nicholas Runolfsdottir V', 'Sherwood@rosamond.me'),
+(89, 'Glenna Reichert', 'Chaim_McDermott@dana.io'),
+(90, 'Clementina DuBuque', 'Rey.Padberg@karina.biz'),
+(91, 'Leanne Graham', 'Sincere@april.biz'),
+(92, 'Ervin Howell', 'Shanna@melissa.tv'),
+(93, 'Clementine Bauch', 'Nathan@yesenia.net'),
+(94, 'Patricia Lebsack', 'Julianne.OConner@kory.org'),
+(95, 'Chelsey Dietrich', 'Lucio_Hettinger@annie.ca'),
+(96, 'Mrs. Dennis Schulist', 'Karley_Dach@jasper.info'),
+(97, 'Kurtis Weissnat', 'Telly.Hoeger@billy.biz'),
+(98, 'Nicholas Runolfsdottir V', 'Sherwood@rosamond.me'),
+(99, 'Glenna Reichert', 'Chaim_McDermott@dana.io'),
+(100, 'Clementina DuBuque', 'Rey.Padberg@karina.biz'),
+(101, 'Leanne Graham', 'Sincere@april.biz'),
+(102, 'Ervin Howell', 'Shanna@melissa.tv'),
+(103, 'Clementine Bauch', 'Nathan@yesenia.net'),
+(104, 'Patricia Lebsack', 'Julianne.OConner@kory.org'),
+(105, 'Chelsey Dietrich', 'Lucio_Hettinger@annie.ca'),
+(106, 'Mrs. Dennis Schulist', 'Karley_Dach@jasper.info'),
+(107, 'Kurtis Weissnat', 'Telly.Hoeger@billy.biz'),
+(108, 'Nicholas Runolfsdottir V', 'Sherwood@rosamond.me'),
+(109, 'Glenna Reichert', 'Chaim_McDermott@dana.io'),
+(110, 'Clementina DuBuque', 'Rey.Padberg@karina.biz'),
+(111, 'Leanne Graham', 'Sincere@april.biz'),
+(112, 'Ervin Howell', 'Shanna@melissa.tv'),
+(113, 'Clementine Bauch', 'Nathan@yesenia.net'),
+(114, 'Patricia Lebsack', 'Julianne.OConner@kory.org'),
+(115, 'Chelsey Dietrich', 'Lucio_Hettinger@annie.ca'),
+(116, 'Mrs. Dennis Schulist', 'Karley_Dach@jasper.info'),
+(117, 'Kurtis Weissnat', 'Telly.Hoeger@billy.biz'),
+(118, 'Nicholas Runolfsdottir V', 'Sherwood@rosamond.me'),
+(119, 'Glenna Reichert', 'Chaim_McDermott@dana.io'),
+(120, 'Clementina DuBuque', 'Rey.Padberg@karina.biz'),
+(121, 'Leanne Graham', 'Sincere@april.biz'),
+(122, 'Ervin Howell', 'Shanna@melissa.tv'),
+(123, 'Clementine Bauch', 'Nathan@yesenia.net'),
+(124, 'Patricia Lebsack', 'Julianne.OConner@kory.org'),
+(125, 'Chelsey Dietrich', 'Lucio_Hettinger@annie.ca'),
+(126, 'Mrs. Dennis Schulist', 'Karley_Dach@jasper.info'),
+(127, 'Kurtis Weissnat', 'Telly.Hoeger@billy.biz'),
+(128, 'Nicholas Runolfsdottir V', 'Sherwood@rosamond.me'),
+(129, 'Glenna Reichert', 'Chaim_McDermott@dana.io'),
+(130, 'Clementina DuBuque', 'Rey.Padberg@karina.biz'),
+(131, 'Leanne Graham', 'Sincere@april.biz'),
+(132, 'Ervin Howell', 'Shanna@melissa.tv'),
+(133, 'Clementine Bauch', 'Nathan@yesenia.net'),
+(134, 'Patricia Lebsack', 'Julianne.OConner@kory.org'),
+(135, 'Chelsey Dietrich', 'Lucio_Hettinger@annie.ca'),
+(136, 'Mrs. Dennis Schulist', 'Karley_Dach@jasper.info'),
+(137, 'Kurtis Weissnat', 'Telly.Hoeger@billy.biz'),
+(138, 'Nicholas Runolfsdottir V', 'Sherwood@rosamond.me'),
+(139, 'Glenna Reichert', 'Chaim_McDermott@dana.io'),
+(140, 'Clementina DuBuque', 'Rey.Padberg@karina.biz'),
+(141, 'Leanne Graham', 'Sincere@april.biz'),
+(142, 'Ervin Howell', 'Shanna@melissa.tv'),
+(143, 'Clementine Bauch', 'Nathan@yesenia.net'),
+(144, 'Patricia Lebsack', 'Julianne.OConner@kory.org'),
+(145, 'Chelsey Dietrich', 'Lucio_Hettinger@annie.ca'),
+(146, 'Mrs. Dennis Schulist', 'Karley_Dach@jasper.info'),
+(147, 'Kurtis Weissnat', 'Telly.Hoeger@billy.biz'),
+(148, 'Nicholas Runolfsdottir V', 'Sherwood@rosamond.me'),
+(149, 'Glenna Reichert', 'Chaim_McDermott@dana.io'),
+(150, 'Clementina DuBuque', 'Rey.Padberg@karina.biz'),
+(151, 'Leanne Graham', 'Sincere@april.biz'),
+(152, 'Ervin Howell', 'Shanna@melissa.tv'),
+(153, 'Clementine Bauch', 'Nathan@yesenia.net'),
+(154, 'Patricia Lebsack', 'Julianne.OConner@kory.org'),
+(155, 'Chelsey Dietrich', 'Lucio_Hettinger@annie.ca'),
+(156, 'Mrs. Dennis Schulist', 'Karley_Dach@jasper.info'),
+(157, 'Kurtis Weissnat', 'Telly.Hoeger@billy.biz'),
+(158, 'Nicholas Runolfsdottir V', 'Sherwood@rosamond.me'),
+(159, 'Glenna Reichert', 'Chaim_McDermott@dana.io'),
+(160, 'Clementina DuBuque', 'Rey.Padberg@karina.biz'),
+(161, 'Leanne Graham', 'Sincere@april.biz'),
+(162, 'Ervin Howell', 'Shanna@melissa.tv'),
+(163, 'Clementine Bauch', 'Nathan@yesenia.net'),
+(164, 'Patricia Lebsack', 'Julianne.OConner@kory.org'),
+(165, 'Chelsey Dietrich', 'Lucio_Hettinger@annie.ca'),
+(166, 'Mrs. Dennis Schulist', 'Karley_Dach@jasper.info'),
+(167, 'Kurtis Weissnat', 'Telly.Hoeger@billy.biz'),
+(168, 'Nicholas Runolfsdottir V', 'Sherwood@rosamond.me'),
+(169, 'Glenna Reichert', 'Chaim_McDermott@dana.io'),
+(170, 'Clementina DuBuque', 'Rey.Padberg@karina.biz'),
+(171, 'Leanne Graham', 'Sincere@april.biz'),
+(172, 'Ervin Howell', 'Shanna@melissa.tv'),
+(173, 'Clementine Bauch', 'Nathan@yesenia.net'),
+(174, 'Patricia Lebsack', 'Julianne.OConner@kory.org'),
+(175, 'Chelsey Dietrich', 'Lucio_Hettinger@annie.ca'),
+(176, 'Mrs. Dennis Schulist', 'Karley_Dach@jasper.info'),
+(177, 'Kurtis Weissnat', 'Telly.Hoeger@billy.biz'),
+(178, 'Nicholas Runolfsdottir V', 'Sherwood@rosamond.me'),
+(179, 'Glenna Reichert', 'Chaim_McDermott@dana.io'),
+(180, 'Clementina DuBuque', 'Rey.Padberg@karina.biz'),
+(181, 'Leanne Graham', 'Sincere@april.biz'),
+(182, 'Ervin Howell', 'Shanna@melissa.tv'),
+(183, 'Clementine Bauch', 'Nathan@yesenia.net'),
+(184, 'Patricia Lebsack', 'Julianne.OConner@kory.org'),
+(185, 'Chelsey Dietrich', 'Lucio_Hettinger@annie.ca'),
+(186, 'Mrs. Dennis Schulist', 'Karley_Dach@jasper.info'),
+(187, 'Kurtis Weissnat', 'Telly.Hoeger@billy.biz'),
+(188, 'Nicholas Runolfsdottir V', 'Sherwood@rosamond.me'),
+(189, 'Glenna Reichert', 'Chaim_McDermott@dana.io'),
+(190, 'Clementina DuBuque', 'Rey.Padberg@karina.biz'),
+(191, 'Leanne Graham', 'Sincere@april.biz'),
+(192, 'Ervin Howell', 'Shanna@melissa.tv'),
+(193, 'Clementine Bauch', 'Nathan@yesenia.net'),
+(194, 'Patricia Lebsack', 'Julianne.OConner@kory.org'),
+(195, 'Chelsey Dietrich', 'Lucio_Hettinger@annie.ca'),
+(196, 'Mrs. Dennis Schulist', 'Karley_Dach@jasper.info'),
+(197, 'Kurtis Weissnat', 'Telly.Hoeger@billy.biz'),
+(198, 'Nicholas Runolfsdottir V', 'Sherwood@rosamond.me'),
+(199, 'Glenna Reichert', 'Chaim_McDermott@dana.io'),
+(200, 'Clementina DuBuque', 'Rey.Padberg@karina.biz'),
+(201, 'Leanne Graham', 'Sincere@april.biz'),
+(202, 'Ervin Howell', 'Shanna@melissa.tv'),
+(203, 'Clementine Bauch', 'Nathan@yesenia.net'),
+(204, 'Patricia Lebsack', 'Julianne.OConner@kory.org'),
+(205, 'Chelsey Dietrich', 'Lucio_Hettinger@annie.ca'),
+(206, 'Mrs. Dennis Schulist', 'Karley_Dach@jasper.info'),
+(207, 'Kurtis Weissnat', 'Telly.Hoeger@billy.biz'),
+(208, 'Nicholas Runolfsdottir V', 'Sherwood@rosamond.me'),
+(209, 'Glenna Reichert', 'Chaim_McDermott@dana.io'),
+(210, 'Clementina DuBuque', 'Rey.Padberg@karina.biz'),
+(211, 'Leanne Graham', 'Sincere@april.biz'),
+(212, 'Ervin Howell', 'Shanna@melissa.tv'),
+(213, 'Clementine Bauch', 'Nathan@yesenia.net'),
+(214, 'Patricia Lebsack', 'Julianne.OConner@kory.org'),
+(215, 'Chelsey Dietrich', 'Lucio_Hettinger@annie.ca'),
+(216, 'Mrs. Dennis Schulist', 'Karley_Dach@jasper.info'),
+(217, 'Kurtis Weissnat', 'Telly.Hoeger@billy.biz'),
+(218, 'Nicholas Runolfsdottir V', 'Sherwood@rosamond.me'),
+(219, 'Glenna Reichert', 'Chaim_McDermott@dana.io'),
+(220, 'Clementina DuBuque', 'Rey.Padberg@karina.biz'),
+(221, 'Leanne Graham', 'Sincere@april.biz'),
+(222, 'Ervin Howell', 'Shanna@melissa.tv'),
+(223, 'Clementine Bauch', 'Nathan@yesenia.net'),
+(224, 'Patricia Lebsack', 'Julianne.OConner@kory.org'),
+(225, 'Chelsey Dietrich', 'Lucio_Hettinger@annie.ca'),
+(226, 'Mrs. Dennis Schulist', 'Karley_Dach@jasper.info'),
+(227, 'Kurtis Weissnat', 'Telly.Hoeger@billy.biz'),
+(228, 'Nicholas Runolfsdottir V', 'Sherwood@rosamond.me'),
+(229, 'Glenna Reichert', 'Chaim_McDermott@dana.io'),
+(230, 'Clementina DuBuque', 'Rey.Padberg@karina.biz'),
+(231, 'Leanne Graham', 'Sincere@april.biz'),
+(232, 'Ervin Howell', 'Shanna@melissa.tv'),
+(233, 'Clementine Bauch', 'Nathan@yesenia.net'),
+(234, 'Patricia Lebsack', 'Julianne.OConner@kory.org'),
+(235, 'Chelsey Dietrich', 'Lucio_Hettinger@annie.ca'),
+(236, 'Mrs. Dennis Schulist', 'Karley_Dach@jasper.info'),
+(237, 'Kurtis Weissnat', 'Telly.Hoeger@billy.biz'),
+(238, 'Nicholas Runolfsdottir V', 'Sherwood@rosamond.me'),
+(239, 'Glenna Reichert', 'Chaim_McDermott@dana.io'),
+(240, 'Clementina DuBuque', 'Rey.Padberg@karina.biz'),
+(241, 'Leanne Graham', 'Sincere@april.biz'),
+(242, 'Ervin Howell', 'Shanna@melissa.tv'),
+(243, 'Clementine Bauch', 'Nathan@yesenia.net'),
+(244, 'Patricia Lebsack', 'Julianne.OConner@kory.org'),
+(245, 'Chelsey Dietrich', 'Lucio_Hettinger@annie.ca'),
+(246, 'Mrs. Dennis Schulist', 'Karley_Dach@jasper.info'),
+(247, 'Kurtis Weissnat', 'Telly.Hoeger@billy.biz'),
+(248, 'Nicholas Runolfsdottir V', 'Sherwood@rosamond.me'),
+(249, 'Glenna Reichert', 'Chaim_McDermott@dana.io'),
+(250, 'Clementina DuBuque', 'Rey.Padberg@karina.biz'),
+(251, 'Leanne Graham', 'Sincere@april.biz'),
+(252, 'Ervin Howell', 'Shanna@melissa.tv'),
+(253, 'Clementine Bauch', 'Nathan@yesenia.net'),
+(254, 'Patricia Lebsack', 'Julianne.OConner@kory.org'),
+(255, 'Chelsey Dietrich', 'Lucio_Hettinger@annie.ca'),
+(256, 'Mrs. Dennis Schulist', 'Karley_Dach@jasper.info'),
+(257, 'Kurtis Weissnat', 'Telly.Hoeger@billy.biz'),
+(258, 'Nicholas Runolfsdottir V', 'Sherwood@rosamond.me'),
+(259, 'Glenna Reichert', 'Chaim_McDermott@dana.io'),
+(260, 'Clementina DuBuque', 'Rey.Padberg@karina.biz');
 
 -- --------------------------------------------------------
 
@@ -99,6 +379,19 @@ CREATE TABLE IF NOT EXISTS `customerhighestorderamount` (
 `CustomerID` int
 ,`CustomerName` varchar(30)
 ,`HighestOrderAmount` decimal(10,2)
+);
+
+-- --------------------------------------------------------
+
+--
+-- Stand-in structure for view `dep1and2employees`
+-- (See below for the actual view)
+--
+DROP VIEW IF EXISTS `dep1and2employees`;
+CREATE TABLE IF NOT EXISTS `dep1and2employees` (
+`E_ID` int
+,`Emp_Fname` varchar(30)
+,`Emp_Lname` varchar(30)
 );
 
 -- --------------------------------------------------------
@@ -196,6 +489,31 @@ INSERT INTO `employee` (`E_ID`, `Emp_Fname`, `Emp_Minit`, `Emp_Lname`, `Dep_No`,
 -- --------------------------------------------------------
 
 --
+-- Stand-in structure for view `employeeshippedsales`
+-- (See below for the actual view)
+--
+DROP VIEW IF EXISTS `employeeshippedsales`;
+CREATE TABLE IF NOT EXISTS `employeeshippedsales` (
+`EmployeeName` varchar(61)
+,`EmployeeID` int
+,`TotalSales` decimal(32,2)
+);
+
+-- --------------------------------------------------------
+
+--
+-- Stand-in structure for view `highvaluecustomers`
+-- (See below for the actual view)
+--
+DROP VIEW IF EXISTS `highvaluecustomers`;
+CREATE TABLE IF NOT EXISTS `highvaluecustomers` (
+`CustomerID` int
+,`CustomerName` varchar(30)
+);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `manufacturer`
 --
 
@@ -260,6 +578,40 @@ INSERT INTO `orders` (`Order_ID`, `Order_Date`, `Cust_ID`, `Emp_ID`, `Ship_ID`, 
 (10, '2023-11-20', 2, 24, 10, 6, '839.82'),
 (11, '2023-11-25', 12, 30, 11, 1, '618.84'),
 (12, '2023-11-30', 20, 35, 12, 6, '184.94');
+
+-- --------------------------------------------------------
+
+--
+-- Stand-in structure for view `ordersview`
+-- (See below for the actual view)
+--
+DROP VIEW IF EXISTS `ordersview`;
+CREATE TABLE IF NOT EXISTS `ordersview` (
+`Order_ID` int
+,`Order_Date` date
+,`Cust_ID` int
+,`Emp_ID` int
+,`Ship_ID` int
+,`ware_ID` int
+,`Total_Price` decimal(10,2)
+,`Shipping_ID` int
+,`Shipment_Date` date
+,`Ord_ID` int
+);
+
+-- --------------------------------------------------------
+
+--
+-- Stand-in structure for view `orderswithcustomers`
+-- (See below for the actual view)
+--
+DROP VIEW IF EXISTS `orderswithcustomers`;
+CREATE TABLE IF NOT EXISTS `orderswithcustomers` (
+`order_ID` int
+,`cust_name` varchar(30)
+,`cust_address` varchar(40)
+,`order_date` date
+);
 
 -- --------------------------------------------------------
 
@@ -332,25 +684,23 @@ DROP TRIGGER IF EXISTS `after_order_products_insert`;
 DELIMITER $$
 CREATE TRIGGER `after_order_products_insert` AFTER INSERT ON `order_products` FOR EACH ROW BEGIN
     INSERT INTO TransactionHist (order_id, product_id, quantity, trans_date)
-    SELECT op.order_id, op.prod_id, op.quantity, o.order_date
-    FROM Order_Products op
-    JOIN Orders o ON op.order_id = o.order_id
-    WHERE op.order_id = NEW.order_id;
+    SELECT NEW.order_id, NEW.prod_id, NEW.quantity, o.order_date
+    FROM Orders o
+    WHERE o.order_id = NEW.order_id;
 END
 $$
 DELIMITER ;
 DROP TRIGGER IF EXISTS `after_order_products_update`;
 DELIMITER $$
 CREATE TRIGGER `after_order_products_update` AFTER UPDATE ON `order_products` FOR EACH ROW BEGIN
-    -- Delete existing transaction history records for the updated order
-    DELETE FROM TransactionHist WHERE order_id = NEW.order_id;
+    -- Delete existing transaction history records for the updated order product
+    DELETE FROM TransactionHist WHERE order_id = NEW.order_id AND product_id = NEW.prod_id;
 
-    -- Insert updated records into Transaction_History
+    -- Insert updated data into TransactionHist
     INSERT INTO TransactionHist (order_id, product_id, quantity, trans_date)
-    SELECT op.order_id, op.prod_id, op.quantity, o.order_date
-    FROM Order_Products op
-    JOIN Orders o ON op.order_id = o.order_id
-    WHERE op.order_id = NEW.order_id;
+    SELECT NEW.order_id, NEW.prod_id, NEW.quantity, o.order_date
+    FROM Orders o
+    WHERE o.order_id = NEW.order_id;
 END
 $$
 DELIMITER ;
@@ -392,7 +742,7 @@ CREATE TABLE IF NOT EXISTS `product` (
   KEY `classifed_as` (`cate_ID`),
   KEY `supplied_by` (`supp_ID`),
   KEY `made_by` (`manu_ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `product`
@@ -416,7 +766,26 @@ INSERT INTO `product` (`Product_ID`, `prod_name`, `prod_desc`, `prod_price`, `ca
 (15, 'Board Game: Adventure Quest', 'Exciting board game that takes players on a thrilling adventure.', '49.95', 5, 5, 5),
 (16, 'Countertop Blender', 'Powerful blender for making smoothies, soups, and more.', '79.99', 6, 6, 6),
 (17, 'Stainless Steel Cookware Set', 'High-quality cookware set for all your culinary needs.', '129.95', 6, 6, 6),
-(18, 'Digital Kitchen Scale', 'Accurate and easy-to-use kitchen scale for precise measurements.', '39.99', 6, 6, 6);
+(18, 'Digital Kitchen Scale', 'Accurate and easy-to-use kitchen scale for precise measurements.', '39.99', 6, 6, 6),
+(19, 'Hello Kitty Plushie', 'Cute Plushy', '49.99', 5, 5, 5),
+(20, 'Harry Potter', 'Book', '12.90', 3, 3, 3);
+
+-- --------------------------------------------------------
+
+--
+-- Stand-in structure for view `productinfo`
+-- (See below for the actual view)
+--
+DROP VIEW IF EXISTS `productinfo`;
+CREATE TABLE IF NOT EXISTS `productinfo` (
+`product_ID` int
+,`prod_name` varchar(30)
+,`prod_price` decimal(10,2)
+,`prod_desc` varchar(100)
+,`category_name` varchar(30)
+,`supp_name` varchar(30)
+,`manu_name` varchar(30)
+);
 
 -- --------------------------------------------------------
 
@@ -494,7 +863,7 @@ CREATE TABLE IF NOT EXISTS `transactionhist` (
   PRIMARY KEY (`Trans_ID`),
   KEY `apart_of_order` (`Order_ID`),
   KEY `purchased_product` (`Product_ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=85 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `transactionhist`
@@ -502,77 +871,55 @@ CREATE TABLE IF NOT EXISTS `transactionhist` (
 
 INSERT INTO `transactionhist` (`Trans_ID`, `Order_ID`, `Product_ID`, `Quantity`, `Trans_Date`) VALUES
 (1, 1, 1, 2, '2023-10-05'),
-(2, 1, 1, 2, '2023-10-05'),
-(3, 1, 5, 1, '2023-10-05'),
-(5, 1, 1, 2, '2023-10-05'),
-(6, 1, 5, 1, '2023-10-05'),
-(7, 1, 9, 3, '2023-10-05'),
-(8, 2, 2, 3, '2023-10-10'),
-(9, 2, 2, 3, '2023-10-10'),
-(10, 2, 7, 2, '2023-10-10'),
-(12, 2, 2, 3, '2023-10-10'),
-(13, 2, 7, 2, '2023-10-10'),
-(14, 2, 12, 1, '2023-10-10'),
-(15, 3, 3, 1, '2023-10-15'),
-(16, 3, 3, 1, '2023-10-15'),
-(17, 3, 8, 2, '2023-10-15'),
-(19, 3, 3, 1, '2023-10-15'),
-(20, 3, 8, 2, '2023-10-15'),
-(21, 3, 14, 3, '2023-10-15'),
-(22, 4, 4, 2, '2023-10-20'),
-(23, 4, 4, 2, '2023-10-20'),
-(24, 4, 9, 1, '2023-10-20'),
-(26, 4, 4, 2, '2023-10-20'),
-(27, 4, 9, 1, '2023-10-20'),
-(28, 4, 18, 3, '2023-10-20'),
-(29, 5, 6, 3, '2023-10-25'),
-(30, 5, 6, 3, '2023-10-25'),
-(31, 5, 11, 1, '2023-10-25'),
-(33, 5, 6, 3, '2023-10-25'),
-(34, 5, 11, 1, '2023-10-25'),
-(35, 5, 15, 2, '2023-10-25'),
-(36, 6, 1, 2, '2023-10-30'),
-(37, 6, 1, 2, '2023-10-30'),
-(38, 6, 7, 1, '2023-10-30'),
-(40, 6, 1, 2, '2023-10-30'),
-(41, 6, 7, 1, '2023-10-30'),
-(42, 6, 13, 3, '2023-10-30'),
-(43, 7, 2, 3, '2023-11-05'),
-(44, 7, 2, 3, '2023-11-05'),
-(45, 7, 8, 2, '2023-11-05'),
-(47, 7, 2, 3, '2023-11-05'),
-(48, 7, 8, 2, '2023-11-05'),
-(49, 7, 12, 1, '2023-11-05'),
-(50, 8, 3, 1, '2023-11-10'),
-(51, 8, 3, 1, '2023-11-10'),
-(52, 8, 9, 2, '2023-11-10'),
-(54, 8, 3, 1, '2023-11-10'),
-(55, 8, 9, 2, '2023-11-10'),
-(56, 8, 14, 3, '2023-11-10'),
-(57, 9, 4, 2, '2023-11-15'),
-(58, 9, 4, 2, '2023-11-15'),
-(59, 9, 10, 1, '2023-11-15'),
-(61, 9, 4, 2, '2023-11-15'),
-(62, 9, 10, 1, '2023-11-15'),
-(63, 9, 16, 3, '2023-11-15'),
-(64, 10, 5, 3, '2023-11-20'),
-(65, 10, 5, 3, '2023-11-20'),
-(66, 10, 11, 1, '2023-11-20'),
-(68, 10, 5, 3, '2023-11-20'),
-(69, 10, 11, 1, '2023-11-20'),
-(70, 10, 15, 2, '2023-11-20'),
-(71, 11, 6, 2, '2023-11-25'),
-(72, 11, 6, 2, '2023-11-25'),
-(73, 11, 12, 1, '2023-11-25'),
-(75, 11, 6, 2, '2023-11-25'),
-(76, 11, 12, 1, '2023-11-25'),
-(77, 11, 17, 3, '2023-11-25'),
-(78, 12, 7, 3, '2023-11-30'),
-(79, 12, 7, 3, '2023-11-30'),
-(80, 12, 13, 1, '2023-11-30'),
-(82, 12, 7, 3, '2023-11-30'),
-(83, 12, 13, 1, '2023-11-30'),
-(84, 12, 18, 2, '2023-11-30');
+(2, 1, 5, 1, '2023-10-05'),
+(3, 1, 9, 3, '2023-10-05'),
+(4, 2, 2, 3, '2023-10-10'),
+(5, 2, 7, 2, '2023-10-10'),
+(6, 2, 12, 1, '2023-10-10'),
+(7, 3, 3, 1, '2023-10-15'),
+(8, 3, 8, 2, '2023-10-15'),
+(9, 3, 14, 3, '2023-10-15'),
+(10, 4, 4, 2, '2023-10-20'),
+(11, 4, 9, 1, '2023-10-20'),
+(12, 4, 18, 3, '2023-10-20'),
+(13, 5, 6, 3, '2023-10-25'),
+(14, 5, 11, 1, '2023-10-25'),
+(15, 5, 15, 2, '2023-10-25'),
+(16, 6, 1, 2, '2023-10-30'),
+(17, 6, 7, 1, '2023-10-30'),
+(18, 6, 13, 3, '2023-10-30'),
+(19, 7, 2, 3, '2023-11-05'),
+(20, 7, 8, 2, '2023-11-05'),
+(21, 7, 12, 1, '2023-11-05'),
+(22, 8, 3, 1, '2023-11-10'),
+(23, 8, 9, 2, '2023-11-10'),
+(24, 8, 14, 3, '2023-11-10'),
+(25, 9, 4, 2, '2023-11-15'),
+(26, 9, 10, 1, '2023-11-15'),
+(27, 9, 16, 3, '2023-11-15'),
+(28, 10, 5, 3, '2023-11-20'),
+(29, 10, 11, 1, '2023-11-20'),
+(30, 10, 15, 2, '2023-11-20'),
+(31, 11, 6, 2, '2023-11-25'),
+(32, 11, 12, 1, '2023-11-25'),
+(33, 11, 17, 3, '2023-11-25'),
+(34, 12, 7, 3, '2023-11-30'),
+(35, 12, 13, 1, '2023-11-30'),
+(36, 12, 18, 2, '2023-11-30');
+
+-- --------------------------------------------------------
+
+--
+-- Stand-in structure for view `transactionhistory`
+-- (See below for the actual view)
+--
+DROP VIEW IF EXISTS `transactionhistory`;
+CREATE TABLE IF NOT EXISTS `transactionhistory` (
+`Trans_ID` int
+,`Trans_Date` date
+,`Prod_name` varchar(30)
+,`Product_ID` int
+);
 
 -- --------------------------------------------------------
 
@@ -594,12 +941,39 @@ CREATE TABLE IF NOT EXISTS `warehouse` (
 --
 
 INSERT INTO `warehouse` (`Warehouse_ID`, `War_Address`, `War_Mngr_ID`) VALUES
-(1, 'Warehouse 1 Address', 1),
-(2, 'Warehouse 2 Address', 2),
-(3, 'Warehouse 3 Address', 3),
-(4, 'Warehouse 4 Address', 4),
-(5, 'Warehouse 5 Address', 5),
-(6, 'Warehouse 6 Address', 6);
+(1, 'Ajax', 1),
+(2, 'Oshawa', 2),
+(3, 'Whitby', 3),
+(4, 'Pickering', 4),
+(5, 'Scarborough', 5),
+(6, 'Markham', 6);
+
+-- --------------------------------------------------------
+
+--
+-- Stand-in structure for view `warehouseinventory`
+-- (See below for the actual view)
+--
+DROP VIEW IF EXISTS `warehouseinventory`;
+CREATE TABLE IF NOT EXISTS `warehouseinventory` (
+`product_ID` int
+,`prod_name` varchar(30)
+,`quantity` int
+,`war_address` varchar(40)
+);
+
+-- --------------------------------------------------------
+
+--
+-- Stand-in structure for view `warehousemanagers`
+-- (See below for the actual view)
+--
+DROP VIEW IF EXISTS `warehousemanagers`;
+CREATE TABLE IF NOT EXISTS `warehousemanagers` (
+`Warehouse_ID` int
+,`War_Address` varchar(40)
+,`ManagerName` varchar(61)
+);
 
 -- --------------------------------------------------------
 
@@ -612,7 +986,8 @@ CREATE TABLE IF NOT EXISTS `warehouse_inventory` (
   `ware_ID` int NOT NULL,
   `prod_ID` int NOT NULL,
   `quantity` int NOT NULL,
-  PRIMARY KEY (`ware_ID`,`prod_ID`)
+  PRIMARY KEY (`ware_ID`,`prod_ID`),
+  KEY `has` (`prod_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -667,6 +1042,96 @@ DROP TABLE IF EXISTS `customerhighestorderamount`;
 DROP VIEW IF EXISTS `customerhighestorderamount`;
 CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `customerhighestorderamount`  AS SELECT `c`.`ID` AS `CustomerID`, `c`.`cust_name` AS `CustomerName`, max(`o`.`Total_Price`) AS `HighestOrderAmount` FROM (`customer` `c` join `orders` `o` on((`c`.`ID` = `o`.`Cust_ID`))) GROUP BY `c`.`ID`, `c`.`cust_name` ORDER BY `c`.`ID` ASC ;
 
+-- --------------------------------------------------------
+
+--
+-- Structure for view `dep1and2employees`
+--
+DROP TABLE IF EXISTS `dep1and2employees`;
+
+DROP VIEW IF EXISTS `dep1and2employees`;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `dep1and2employees`  AS SELECT `employee`.`E_ID` AS `E_ID`, `employee`.`Emp_Fname` AS `Emp_Fname`, `employee`.`Emp_Lname` AS `Emp_Lname` FROM `employee` WHERE (`employee`.`Dep_No` = 1) ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `employeeshippedsales`
+--
+DROP TABLE IF EXISTS `employeeshippedsales`;
+
+DROP VIEW IF EXISTS `employeeshippedsales`;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `employeeshippedsales`  AS SELECT concat(`e`.`Emp_Fname`,' ',`e`.`Emp_Lname`) AS `EmployeeName`, `e`.`E_ID` AS `EmployeeID`, sum(`o`.`Total_Price`) AS `TotalSales` FROM (`employee` `e` join `orders` `o` on((`e`.`E_ID` = `o`.`Emp_ID`))) GROUP BY `e`.`Emp_Fname`, `e`.`Emp_Lname`, `e`.`E_ID` ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `highvaluecustomers`
+--
+DROP TABLE IF EXISTS `highvaluecustomers`;
+
+DROP VIEW IF EXISTS `highvaluecustomers`;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `highvaluecustomers`  AS SELECT `c`.`ID` AS `CustomerID`, `c`.`cust_name` AS `CustomerName` FROM `customer` AS `c` WHERE `c`.`ID` in (select `o`.`Cust_ID` from `orders` `o` group by `o`.`Cust_ID` having (avg(`o`.`Total_Price`) > (select avg(`orders`.`Total_Price`) from `orders`))) ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `ordersview`
+--
+DROP TABLE IF EXISTS `ordersview`;
+
+DROP VIEW IF EXISTS `ordersview`;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `ordersview`  AS SELECT `orders`.`Order_ID` AS `Order_ID`, `orders`.`Order_Date` AS `Order_Date`, `orders`.`Cust_ID` AS `Cust_ID`, `orders`.`Emp_ID` AS `Emp_ID`, `orders`.`Ship_ID` AS `Ship_ID`, `orders`.`ware_ID` AS `ware_ID`, `orders`.`Total_Price` AS `Total_Price`, `shipping`.`Shipping_ID` AS `Shipping_ID`, `shipping`.`Shipment_Date` AS `Shipment_Date`, `shipping`.`Ord_ID` AS `Ord_ID` FROM (`orders` left join `shipping` on((`orders`.`Ship_ID` = `shipping`.`Shipping_ID`))) ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `orderswithcustomers`
+--
+DROP TABLE IF EXISTS `orderswithcustomers`;
+
+DROP VIEW IF EXISTS `orderswithcustomers`;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `orderswithcustomers`  AS SELECT `o`.`Order_ID` AS `order_ID`, `c`.`cust_name` AS `cust_name`, `c`.`cust_address` AS `cust_address`, `o`.`Order_Date` AS `order_date` FROM (`orders` `o` join `customer` `c` on((`o`.`Cust_ID` = `c`.`ID`))) ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `productinfo`
+--
+DROP TABLE IF EXISTS `productinfo`;
+
+DROP VIEW IF EXISTS `productinfo`;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `productinfo`  AS SELECT `p`.`Product_ID` AS `product_ID`, `p`.`prod_name` AS `prod_name`, `p`.`prod_price` AS `prod_price`, `p`.`prod_desc` AS `prod_desc`, `c`.`Category_Name` AS `category_name`, `s`.`supp_name` AS `supp_name`, `m`.`manu_name` AS `manu_name` FROM (((`product` `p` left join `category` `c` on((`p`.`cate_ID` = `c`.`Category_ID`))) left join `supplier` `s` on((`p`.`supp_ID` = `s`.`supp_ID`))) left join `manufacturer` `m` on((`p`.`manu_ID` = `m`.`manu_ID`))) ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `transactionhistory`
+--
+DROP TABLE IF EXISTS `transactionhistory`;
+
+DROP VIEW IF EXISTS `transactionhistory`;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `transactionhistory`  AS SELECT `t`.`Trans_ID` AS `Trans_ID`, `t`.`Trans_Date` AS `Trans_Date`, `p`.`prod_name` AS `Prod_name`, `t`.`Product_ID` AS `Product_ID` FROM (`transactionhist` `t` join `product` `p` on((`t`.`Product_ID` = `p`.`Product_ID`))) ORDER BY `t`.`Trans_ID` ASC ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `warehouseinventory`
+--
+DROP TABLE IF EXISTS `warehouseinventory`;
+
+DROP VIEW IF EXISTS `warehouseinventory`;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `warehouseinventory`  AS SELECT `p`.`Product_ID` AS `product_ID`, `p`.`prod_name` AS `prod_name`, `wi`.`quantity` AS `quantity`, `w`.`War_Address` AS `war_address` FROM ((`product` `p` join `warehouse_inventory` `wi` on((`p`.`Product_ID` = `wi`.`prod_ID`))) join `warehouse` `w` on((`wi`.`ware_ID` = `w`.`Warehouse_ID`))) ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `warehousemanagers`
+--
+DROP TABLE IF EXISTS `warehousemanagers`;
+
+DROP VIEW IF EXISTS `warehousemanagers`;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `warehousemanagers`  AS SELECT `w`.`Warehouse_ID` AS `Warehouse_ID`, `w`.`War_Address` AS `War_Address`, concat(`e`.`Emp_Fname`,' ',`e`.`Emp_Lname`) AS `ManagerName` FROM (`warehouse` `w` left join `employee` `e` on((`w`.`War_Mngr_ID` = `e`.`E_ID`))) ;
+
 --
 -- Constraints for dumped tables
 --
@@ -675,7 +1140,7 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 -- Constraints for table `department`
 --
 ALTER TABLE `department`
-  ADD CONSTRAINT `managed_by` FOREIGN KEY (`Dep_mngr_ID`) REFERENCES `warehouse` (`Warehouse_ID`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+  ADD CONSTRAINT `managed_by` FOREIGN KEY (`Dep_mngr_ID`) REFERENCES `employee` (`E_ID`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 
 --
 -- Constraints for table `employee`
@@ -713,6 +1178,13 @@ ALTER TABLE `transactionhist`
 --
 ALTER TABLE `warehouse`
   ADD CONSTRAINT `supervised_by` FOREIGN KEY (`War_Mngr_ID`) REFERENCES `employee` (`E_ID`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+--
+-- Constraints for table `warehouse_inventory`
+--
+ALTER TABLE `warehouse_inventory`
+  ADD CONSTRAINT `has` FOREIGN KEY (`prod_ID`) REFERENCES `product` (`Product_ID`) ON DELETE RESTRICT ON UPDATE RESTRICT,
+  ADD CONSTRAINT `stored_In` FOREIGN KEY (`ware_ID`) REFERENCES `warehouse` (`Warehouse_ID`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
