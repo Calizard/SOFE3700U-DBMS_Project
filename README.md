@@ -13,7 +13,14 @@ The following versions were used within WAMP:
 The 'dbproject' folder is to be placed in the web server's root directory,  
 ie. WAMP 'www' folder or XAMP equivalent.
 
-Please do not rename the 'dbproject' folder.  
+Please do not rename the 'dbproject' folder and remember to adjust the database connection settings if you do not use the dafault settings to host the project.  
+  
+In this project we used the default settings so the server was:  
+  
+hosted on 'localhost'  
+the username was 'root'  
+there was no password set  
+and the database name was 'dbproject'  
 
 dbproject.sql should be imported into your MySQL database,  
 ie. using PhpMyAdmin
